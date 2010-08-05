@@ -36,7 +36,7 @@ $.fn.showPassword = function(options) {
     
     $parent.height(parentHeight);
   
-		//Create the link
+    //Create the link
     $('<a/>', {
       href: '#',
       'class': o.linkClass,
@@ -69,7 +69,7 @@ $.fn.showPassword = function(options) {
       'top': (toggleAnchorTop - toggleAnchorHeight - o.linkTopOffset)
     });
     
-		//Create the input to switch
+    //Create the input to switch
     $('<input/>', {
       'class': o.showPasswordInputClass,
       css: {
