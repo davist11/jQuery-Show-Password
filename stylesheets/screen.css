@@ -1,0 +1,112 @@
+/* @group reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, .btn 
+{ margin: 0; padding: 0; border: 0; font-style: inherit; font-weight: inherit; font-size: 100%; font-family: inherit; vertical-align:baseline }
+a img, frameset { border: 0; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+/* @end */
+
+/* @group basic */
+body {
+  color: #777;
+  font: 12px/20px Helvetica, Arial, sans-serif;
+}
+/* @end */
+
+/* @group forms */
+form {
+  background: #777;
+  border-radius: 10px;
+  margin: 40px auto;
+  -moz-border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+  -webkit-border-radius: 10px;
+  width: 300px;
+}
+.forms {
+  list-style: none;
+}
+.forms li {
+  margin-bottom: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+.forms .buttons {
+  margin-bottom: 0;
+}
+label {
+  background: #cecece;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin: 7px 0 0;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  text-transform: uppercase;
+  padding: 5px 15px 5px 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  width: 70px;
+}
+input {
+  background: #ddd;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  box-shadow: -1px 0 1px rgba(0,0,0,0.25);
+  float: right;
+  font: inherit;
+  font-size: 14px;
+  height: 20px;
+  margin: 0;
+  -moz-border-radius: 10px;
+  -moz-box-shadow: -1px 0 1px rgba(0,0,0,0.25);
+  outline: none;
+  padding: 10px 5px;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: -1px 0 1px rgba(0,0,0,0.25);
+  width: 193px;
+}
+input:focus {
+  background: #eee;
+}
+button {
+  background: #eee;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  color: #777;
+  cursor: pointer;
+  float: right;
+  font: inherit;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  overflow: visible;
+  padding: 5px 10px;
+  text-transform: lowercase;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  width: auto;
+}
+.show-password-link {
+  background: #777;
+  border-radius: 5px;
+  color: #ddd;
+  font-size: 10px;
+  -moz-border-radius: 5px;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: lowercase;
+  -webkit-border-radius: 5px;
+}
+.password-showing,
+.password {
+  padding-right: 45px;
+  width: 153px;
+}
+/* @end */

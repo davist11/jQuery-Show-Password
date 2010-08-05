@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8" />
+<title>jQuery Show Password Plugin</title>
+<link href="stylesheets/screen.css" rel="stylesheet" media="screen,projection" />
+<style>
+.forms li {
+  position: relative;
+}
+.show-password-link {
+  display: block;
+  position: absolute;
+  z-index: 11;
+}
+.password-showing {
+  position: absolute;
+  z-index: 10;
+}
+</style>
+</head>
+
+<body>
+  
+  <form action="#">
+    <ol class="forms">
+      <li>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </li>
+      <li>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="password" />
+      </li>
+      <li class="buttons">
+        <button type="submit">Submit</button>
+      </li>
+    </ol>
+  </form>
+  
+  
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.showPassword.js"></script>
+<script>
+$(document).ready(function() {
+  $(':password').showPassword({
+    linkRightOffset: 5,
+    linkTopOffset: 11
+  });
+});
+</script>
+</body>
+</html>
