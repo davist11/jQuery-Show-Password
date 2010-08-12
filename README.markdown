@@ -18,6 +18,7 @@ Adds a link to toggle the masking of a password input field.
 <pre>$(':password').showPassword({
   linkClass: 'show-password-link', //Class to use for the toggle link
   linkText: 'Show', //Text for the link
+  showPasswordLinkText: 'Hide', //Text for the link when password is not masked
   showPasswordInputClass: 'password-showing', //Class for the text input that will show the password
   linkRightOffset: 0, //Offset from the right of the parent
   linkTopOffset: 0 //Offset from the top of the parent

@@ -7,12 +7,13 @@
  * Uses the same license as jQuery, see:
  * http://jquery.org/license
  *
- * @version 0.1
+ * @version 0.2
  *
  * Example usage:
  * $(':password').showPassword({
  *   linkClass: 'show-password-link',
  *   linkText: 'Show',
+ *   showPasswordLinkText: 'Hide',
  *   showPasswordInputClass: 'password-showing',
  *   linkRightOffset: 0,
  *   linkTopOffset: 0
@@ -42,10 +43,12 @@ $.fn.showPassword = function(options) {
       'class': o.linkClass,
       click: function(e) {
         var $showPassInput = $parent.find('.'+o.showPasswordInputClass);
-        if($this.css('display') === 'none') { //If the regular input is hidden
+        if($this.css('display') === 'none') { //If the regular input is hidden, show it
+          $(this).text(o.linkText);
           $this.val($showPassInput.val()).show();
           $showPassInput.hide();
-        } else { //If the showing password input is hidden
+        } else { //If the showing password input is hidden, show it
+          $(this).text(o.showPasswordLinkText);
           $showPassInput.val($this.val()).show();
           $this.hide();
         }
@@ -87,6 +90,7 @@ $.fn.showPassword = function(options) {
 $.fn.showPassword.defaults = {
   linkClass: 'show-password-link',
   linkText: 'Show',
+  showPasswordLinkText: 'Hide',
   showPasswordInputClass: 'password-showing',
   linkRightOffset: 0,
   linkTopOffset: 0
