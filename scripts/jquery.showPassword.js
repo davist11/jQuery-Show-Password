@@ -7,7 +7,7 @@
  * Uses the same license as jQuery, see:
  * http://jquery.org/license
  *
- * @version 0.2
+ * @version 0.3
  *
  * Example usage:
  * $(':password').showPassword({
@@ -82,6 +82,13 @@ $.fn.showPassword = function(options) {
       },
       type: 'text'
     }).appendTo($parent);
+    
+    //When form is submitted and password is hidden, update the password val
+    $this.closest('form').bind('submit', function() {
+      if($this.css('display') === 'none') {
+        $this.val($this.siblings('.'+o.showPasswordInputClass).val());
+      }
+    });
     
   });
 };
